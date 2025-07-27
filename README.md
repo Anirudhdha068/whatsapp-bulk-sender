@@ -37,3 +37,10 @@ This is a simple Python script that uses the [`pywhatkit`](https://pypi.org/proj
 2. Install Python dependencies using pip:
 
 >pip install pywhatkit
+
+---
+
+## 🚀 How to Run
+
+>python bulk_sender.py
+
