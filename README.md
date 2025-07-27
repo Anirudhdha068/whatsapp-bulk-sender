@@ -1,46 +1,128 @@
-# 📲 WhatsApp Bulk Message Sender using Python
+# 📲 WhatsApp Bulk Message Sender Using CSV & Python
 
-This is a simple Python script that uses the [`pywhatkit`](https://pypi.org/project/pywhatkit/) library to send WhatsApp messages to multiple phone numbers **automatically** through WhatsApp Web — without saving contacts or creating groups.
+This project allows you to send **WhatsApp messages in bulk** using either a `.csv` file **or manual input**—without saving contacts, making a group, or using a broadcast list.
 
-> ⚠️ Use responsibly. This script is for educational or personal notification purposes only. Spamming can result in WhatsApp account suspension.
+✅ Simple UI  
+✅ No contacts needed  
+✅ CSV & manual mode  
+✅ Uses WhatsApp Web  
+✅ 100% free and open-source  
+
+---
+
+## 🚨 Disclaimer
+
+> ⚠️ This tool is for **educational and personal use only**.  
+> **Do NOT use for spam or unsolicited marketing**—doing so may violate WhatsApp's terms and result in a ban.
 
 ---
 
 ## 🔧 Features
 
-- ✅ Sends bulk WhatsApp messages
-- ✅ No need to save contacts
-- ✅ Uses WhatsApp Web (safe and transparent)
-- ✅ Easily customizable message and timing
-- ✅ Open-source and beginner-friendly
+- 📁 CSV and manual number support
+- ✍️ Personalized or static messages
+- 🧑‍💻 No contact saving needed
+- 🌐 Sends via WhatsApp Web
+- 🕒 Adjustable delay for safe operation
+- 🪟 Works on Windows, Mac, and Linux
 
 ---
 
-## 📦 Requirements
+## 📁 CSV File Format (For `bulk_sender_csv.py`)
 
-- Python 3.7 or higher
-- Google Chrome (set as default browser)
-- WhatsApp Web login already done
+Use a `contacts.csv` file like this:
+
+```csv
+Number
++919876543210
++911234567890
+````
+
+✅ Make sure the column is named exactly `Number`
+✅ Include international code like `+91` for India
+
+---
+
+## 🛠️ Requirements
+
+* Python 3.7 or higher
+* Google Chrome (set as your default browser)
+* Logged into WhatsApp Web in browser
 
 ---
 
 ## 📥 Installation
 
+1. Clone the repository:
 
-1. Clone this repository or download the files:
+```bash
+git clone https://github.com/yourusername/whatsapp-bulk-sender.git
+cd whatsapp-bulk-sender
+```
 
->git clone https://github.com/yourusername/whatsapp-bulk-sender.git
->
->cd whatsapp-bulk-sender
+2. Install required Python packages:
 
-
-2. Install Python dependencies using pip:
-
->pip install pywhatkit
+```bash
+pip install pywhatkit pandas
+```
 
 ---
 
 ## 🚀 How to Run
 
->python bulk_sender.py
+### ✅ Method 1: Using CSV File
+
+This will send a fixed message to all numbers listed in `contacts.csv`.
+
+🔗 [Click here to view code → `bulk_sender_csv.py`](./bulk_sender_csv.py)
+
+```bash
+python bulk_sender_csv.py
+```
+
+---
+
+### ✅ Method 2: Without CSV (Manual Entry)
+
+This version allows you to **manually enter phone numbers** without needing a CSV file.
+
+🔗 [Click here to view code → `bulk_sender_manual.py`](./bulk_sender_manual.py)
+
+```bash
+python bulk_sender_manual.py
+```
+
+---
+
+## 🧠 Customization Tips
+
+* Change the message content inside the script easily.
+* Add personalization using a `Name` column in CSV.
+* Increase `time.sleep()` if messages are being blocked.
+* Use `sendwhats_image()` to send images or documents.
+
+---
+
+## ❓ FAQ
+
+**Q: Does it save contacts to phone?**
+A: No. It sends directly without saving anything.
+
+**Q: Can I send attachments?**
+A: Yes. `pywhatkit` supports sending images with `sendwhats_image()`.
+
+**Q: Does the tab auto-close after sending?**
+A: Yes, if `tab_close=True` is set.
+
+---
+
+## 👨‍💻 Developed by
+
+**Anirudhdha Poriya**
+📧 [anirudhdha068@gmail.com](mailto:anirudhdha068@gmail.com)
+
+---
+
+⭐ If you find this helpful, please give a **GitHub star** to support the project!
+
 
