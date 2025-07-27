@@ -6,7 +6,7 @@ numbers = [
     # Add Numbers as needed
 ]
 
-message = "Hello! This is a bulk message test from Kre8IoT."
+message = "YOURE MASSAGE......."
 
 for num in numbers:
     pywhatkit.sendwhatmsg_instantly(num, message, wait_time=10, tab_close=True)
