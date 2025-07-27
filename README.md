@@ -33,9 +33,11 @@ This project allows you to send **WhatsApp messages in bulk** using either a `.c
 Use a `contacts.csv` file like this:
 
 ```csv
-Number
-+919876543210
-+911234567890
+Name,Number
+Ravi,+919876543210
+Sneha,+911234567890
+Amit,+919898989898
+
 ````
 
 ✅ Make sure the column is named exactly `Number`
