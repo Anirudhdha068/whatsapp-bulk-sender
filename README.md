@@ -26,7 +26,14 @@ This is a simple Python script that uses the [`pywhatkit`](https://pypi.org/proj
 
 ## 📥 Installation
 
-Install Python dependencies using pip:
 
-```bash
-pip install pywhatkit
+1. Clone this repository or download the files:
+
+>git clone https://github.com/yourusername/whatsapp-bulk-sender.git
+>
+>cd whatsapp-bulk-sender
+
+
+2. Install Python dependencies using pip:
+
+>pip install pywhatkit
