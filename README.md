@@ -40,7 +40,7 @@ Amit,+919898989898
 
 ````
 
-✅ Make sure the column is named exactly `Number`
+✅ Make sure the column is named exactly `Number`<br>
 ✅ Include international code like `+91` for India
 
 ---
@@ -107,20 +107,20 @@ python bulk_sender_manual.py
 
 ## ❓ FAQ
 
-**Q: Does it save contacts to phone?**
+**Q: Does it save contacts to phone?**<br>
 A: No. It sends directly without saving anything.
 
-**Q: Can I send attachments?**
+**Q: Can I send attachments?**<br>
 A: Yes. `pywhatkit` supports sending images with `sendwhats_image()`.
 
-**Q: Does the tab auto-close after sending?**
+**Q: Does the tab auto-close after sending?**<br>
 A: Yes, if `tab_close=True` is set.
 
 ---
 
 ## 👨‍💻 Developed by
 
-**Anirudhdha Poriya**
+**Anirudhdha Poriya**<br>
 📧 [anirudhdha068@gmail.com](mailto:anirudhdha068@gmail.com)
 
 ---
